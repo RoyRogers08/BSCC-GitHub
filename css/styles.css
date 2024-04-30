@@ -375,3 +375,68 @@ table.events {
     margin-bottom:7px;
 }
 
+
+.back {
+    padding: 20px;
+}
+
+.back a {
+    text-decoration: none;
+}
+
+table.quickref {
+    table-layout: fixed;
+    /*border-style: hidden;*/
+    border-collapse: collapse;
+    /*border-radius: 8px 8px 0 0;*/
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    font-size:12pt;
+    background-color: #ffffa6;
+    
+}
+
+.quickref th{
+    width:20%;
+    height: 2em;
+   
+    background-color: #382e87;
+    color:#f6de06;
+    /*vertical-align: top;*/
+}
+
+.quickref tr{
+    vertical-align:middle;
+    
+}
+
+.quickref td{
+    width:20%;
+    border: 1px solid black;
+    border-top:none;
+    text-align: left;
+    line-height:1em;
+    vertical-align: top;
+    padding-right: 8px;
+    
+}
+
+.quickref a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.quickref a:hover{
+    color:#f6de06;
+    background-color: #382e87;
+    }
+    
+
+
+.quickref ul{
+    padding-left: 25px;
+}
+
+

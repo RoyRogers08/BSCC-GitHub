@@ -385,21 +385,23 @@ table.events {
 }
 
 table.quickref {
-    table-layout: fixed;
+   table-layout: fixed;
     /*border-style: hidden;*/
     border-collapse: collapse;
     /*border-radius: 8px 8px 0 0;*/
     border-radius: 8px 8px 0 0;
-    overflow: hidden;
     margin: 0 auto;
+    /*margin-left:-75px;*/
     margin-bottom: 0px;
     font-size:12pt;
     background-color: #ffffa6;
+    width: 95%;
+
     
 }
 
 .quickref th{
-    width:20%;
+    width:20%; 
     height: 2em;
    
     background-color: #382e87;
@@ -420,6 +422,7 @@ table.quickref {
     line-height:1em;
     vertical-align: top;
     padding-right: 8px;
+    overflow:hidden;
     
 }
 
@@ -438,5 +441,18 @@ table.quickref {
 .quickref ul{
     padding-left: 25px;
 }
+
+.techtop {
+    width:65%;
+    background-color: #fafa13;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 10px 10px 15px grey;
+    border-radius: 8px 8px 8px 8px;
+    padding-top:0;
+    font-size: 1em;}
+
+    .box h4{
+        line-height: .4em;
+    }
 
 

@@ -455,4 +455,21 @@ table.quickref {
         line-height: .4em;
     }
 
+    .linksize{
+        font-size: 1.2em;
+        font-weight:bold;
+        color:green;
+    }
+
+    .ul_link a:hover{
+        text-decoration: none;
+        background-color: black;
+        color:#ffd000;
+    }
+
+    .ul_link a, a:visited{
+        text-decoration: none;
+
+    }
+
 

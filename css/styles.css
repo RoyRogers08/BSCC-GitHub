@@ -455,21 +455,55 @@ table.quickref {
         line-height: .4em;
     }
 
+    .box h2{
+        margin-bottom: 0.10em;
+    }
+
+    .box h3{
+        margin-top: 0.10em;
+        line-height:0.7em;
+    }
+
     .linksize{
         font-size: 1.2em;
         font-weight:bold;
         color:green;
     }
 
-    .ul_link a:hover{
+    .grid-maint {
+       
+        display: grid;
+        /*grid-template-columns: 1fr 1fr minmax(50px, max-content) 1fr;*/
+        grid-template-columns: 1fr 1fr;
+        /*grid-template-rows: 1fr 1fr;*/
+        background-color: #f3e921;
+        border: 1px solid black;
+        
+      }
+
+      .grid-maint-item{
+        
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 1em;
+    /*text-align: center;*/
+    align-content: left;
+
+      }
+
+      .grid-maint img{
+        float: left;
+        margin-right: 20px;
+      }
+
+    /*.ul_link a:hover{
         text-decoration: none;
         background-color: black;
         color:#ffd000;
     }
 
     .ul_link a, a:visited{
-        text-decoration: none;
-
-    }
+        color: black;
+    }/*
 
 

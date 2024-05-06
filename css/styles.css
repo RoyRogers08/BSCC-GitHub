@@ -443,13 +443,22 @@ table.quickref {
 }
 
 .techtop {
-    width:65%;
+    
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width:90%;
     background-color: #fafa13;
     border: 1px solid rgba(0, 0, 0, 0.8);
     box-shadow: 10px 10px 15px grey;
     border-radius: 8px 8px 8px 8px;
     padding-top:0;
-    font-size: 1em;}
+    font-size: 1.1em;}
+
+    .techtop-grid-item{
+        border:1px solid black;
+        font-size: 1em;
+        text-align: left
+    }
 
     .box h4{
         line-height: .4em;
@@ -460,7 +469,7 @@ table.quickref {
     }
 
     .box h3{
-        margin-top: 0.10em;
+        margin-top: 0.20em;
         line-height:0.7em;
     }
 
@@ -496,14 +505,14 @@ table.quickref {
         margin-right: 20px;
       }
 
-    /*.ul_link a:hover{
+   .ul_link a:hover{
         text-decoration: none;
         background-color: black;
         color:#ffd000;
     }
 
-    .ul_link a, a:visited{
+   .ul_link a:visited a:link {
         color: black;
-    }/*
+    }
 
 

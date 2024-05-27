@@ -84,8 +84,6 @@ table.homepage {
     margin: 0 auto;
     margin-bottom: 0px;
     width: 85%;
-
-    /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.99); */
     box-shadow: 10px 10px 15px grey; 
 }
 
@@ -279,6 +277,23 @@ table.events {
     
     
   }
+
+  .grid-container-freeware {
+       
+    display: grid;
+    /*grid-template-columns: 1fr 1fr minmax(50px, max-content) 1fr;*/
+    grid-template-columns: 3fr 3fr 20px 3fr;
+    grid-template-rows: 35px 5fr;
+    /*background-color: #2196F3;*/
+    /*box-shadow: 10px 10px 15px grey;*/
+    
+  }
+
+  .grid-item-freeware-spacer{
+    padding:5px;
+  }
+
+  /* Here before integration */
   
   .grid-container a {
     color:#000000;
@@ -462,7 +477,6 @@ table.quickref {
     font-size: 1.1em;}
 
     .techtop-grid-item{
-        /*border:1px solid black;*/
         font-size: 1em;
         text-align: left;
         padding-right: 6px;
@@ -520,10 +534,6 @@ table.quickref {
       .ul_link a{
         color: black;
       }
-
-        /*.ul_link a:visited {
-            color: black;
-    }*/
    
       .ul_link a:hover{
         text-decoration: none;
@@ -541,14 +551,255 @@ table.quickref {
 
         width:200px;
         float:right;
-        /*margin-top: 2px;
-        margin-bottom: 2px;
-        margin-left: 0;*/
         margin: 10px;
     }
 
- 
+/* For Recommended Specifications Grid */
 
-   
+.grid-container-specs {
+       
+    display: grid;
+    /*grid-template-columns: 2fr 2fr 2fr 1fr;*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-auto-rows:minmax(60px, max-content);
+    width:95%;
+    margin:auto;
+    border:1px solid black;
+    border-radius: 8px;
+    box-shadow: 10px 10px 15px grey;
+    
+    
+  }
 
+  .grid-item-header-1{
 
+    background:#f9f957;
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 8px 0 0 0;
+
+    grid-column: span 3;
+    
+  }
+
+  .grid-item-header-1-last{
+
+    background-color:#f9f957;
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid black;
+    border-radius: 0 8px 0 0;
+    border-right: 1px solid black;   
+    border-left-style: double;
+    border-left-color: #000000;
+    border-left-width: 3px;
+   }
+
+  .grid-item-header-2{
+
+    background-color:#ffff6d;
+    color: #000000;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+  .grid-item-header-2-last{
+
+    background-color:lightblue;
+    color: #000000;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;   
+    border-left-style: double;
+    border-left-color: #000000;
+    border-left-width: 3px;
+  }
+
+  .grid-item{
+    background-color: #382e87;
+    color: #ffffff;
+    font-size: 1.1rem;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    
+  }
+
+  .grid-item-last{
+    background-color: #c9ebf9;
+    color: black;
+    padding: 8px;
+    border-top: 1px solid black;
+    /*border-right: 1px solid black;*/
+    font-size: 1.1rem;
+    border-left-style: double;
+    border-left-color: #000000;
+    border-left-width: 3px;
+    
+  }
+
+  .grid-item-bottom_corner_right{
+    background-color: #c9ebf9;
+    color: black;
+    padding: 8px;
+    border-top: 1px solid black;
+    /*border-right: 1px solid black;*/
+    font-size: 1.1rem;
+    border-left-style: double;
+    border-left-color: #000000;
+    border-left-width: 3px;
+    border-radius:0 0 8px 0;
+    
+  }
+
+  .grid-item-bottom_corner_left{
+    background-color: #382e87;
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-top: 1px solid black;
+    border-radius:0 0 0 8px;
+    
+  }
+
+  /*  For Quick Reference Cards Grid */
+
+  .grid-container-quickref{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto;
+    grid-auto-rows:minmax(65px, max-content);
+    width:90%;
+    margin:auto;
+    background-color: #f9f9f7;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 10px 10px 15px grey;
+
+  }
+  .grid-container-quickref ul, ol{  
+    margin-left: 1em;
+    padding: 7px;
+  }
+  
+
+  .grid-container-quickref>div:nth-child(1){
+    /*border-top: 1px solid black;*/
+    border: 1px solid black;
+    border-radius: 8px 0 0 0;
+    background-color: #382e87;
+    color:#f9f957;
+    font-size:1.3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+  }
+  .grid-container-quickref>div:nth-child(2){
+    border: 1px solid black;
+    background-color: #382e87;
+    color:#f9f957;
+    font-size:1.3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+  }
+  .grid-container-quickref>div:nth-child(3){
+    border: 1px solid black;
+    background-color: #382e87;
+    color:#f9f957;
+    font-size:1.3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+  }
+  .grid-container-quickref>div:nth-child(4){
+    border: 1px solid black;
+    background-color: #382e87;
+    color:#f9f957;
+    font-size:1.3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+  }
+  .grid-container-quickref>div:nth-child(5){
+    border: 1px solid black;
+    border-radius: 0 8px 0 0;
+    background-color: #382e87;
+    color:#f9f957;
+    font-size:1.3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+  }
+  .grid-container-quickref>div:nth-child(6){
+    border: 1px solid black;
+    border-radius: 0 0 0 8px;
+    background-color: #f9f957;
+    color: #000;
+    font-size:1.0rem;
+    /*text-indent:-15px;*/
+    padding:6px;
+  }
+  .grid-container-quickref>div:nth-child(7){
+    border: 1px solid black;
+    background-color: #f9f957;
+    color: #000;
+    font-size:1.0rem;
+    padding:6px;
+  }
+  .grid-container-quickref>div:nth-child(8){
+    border: 1px solid black;
+    background-color: #f9f957;
+    color: #000;
+    font-size:1.0rem;
+    padding:6px;
+  }
+  .grid-container-quickref>div:nth-child(9){
+    border: 1px solid black;
+    background-color: #f9f957;
+    color: #000;
+    font-size:1.0rem;
+    padding:6px;
+  }
+  .grid-container-quickref>div:nth-child(10){
+    border: 1px solid black;
+    border-radius: 0 0 8px 0;
+    background-color: #f9f957;
+    color: #000;
+    font-size:1.0rem;
+    padding:6px;
+  }
+
+  /* For Grid-coded quickref.  Duplicates entries in main stylesheet.*/
+
+  .grid-container-quickref a{
+    color: #000000;
+    text-decoration:underline;
+}
+
+.grid-container-quickref a:hover{
+    color:#f6de06;
+    background-color: #382e87;
+    }
+    
+.grid-container-used_laptops{
+  display:grid;
+  width: 75%;
+  grid-template-columns: repeat(2,max-content);
+  border:1px solid black;
+  border-radius: 8px;
+  column-gap: 20px;
+}

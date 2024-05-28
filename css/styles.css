@@ -305,6 +305,12 @@ table.events {
     color:#ffd000;
     text-decoration:none;
   }
+
+  .grid-container-freeware a:hover {
+    background-color: #000000;
+    color:#ffd000;
+    text-decoration:none;
+  }
   
   /*.grid-container li{
   list-style-type: none;

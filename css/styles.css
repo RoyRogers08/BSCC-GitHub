@@ -1,8 +1,10 @@
 body{
     background-color: #ffffff;
-    /*font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;*/
-    font-family: serif;
-    font-size: 16px;
+    /*font-family: serif;*/
+    /*font-family:Verdana, Geneva, Tahoma, sans-serif;*/
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.25;
     margin: 0;
     }
 
@@ -353,10 +355,8 @@ table.events {
     border: 1px solid rgba(0, 0, 0, 0.8);
     box-shadow: 10px 10px 15px grey;
     border-radius: 0px 0px 0px 8px;
-    /*padding: 20px;*/
-    font-size: 1em;
-    /*text-align: center;*/
-    align-content: center;
+    font-size: 0.95em;
+    /*align-content: center;*/
   }
   
   .grid-item-body2 {
@@ -364,10 +364,8 @@ table.events {
     border: 1px solid rgba(0, 0, 0, 0.8);
     box-shadow: 10px 10px 15px grey;
     border-radius: 0px 0px 8px 0px;
-    /*padding: 20px;*/
-    font-size: 1em;
-    /*text-align: center;*/
-    align-content: center;
+    font-size: 0.95em;
+    /*align-content: center;*/
   }
   
   .grid-item-body3 {
@@ -376,7 +374,7 @@ table.events {
     box-shadow: 10px 10px 15px grey;
     border-radius: 0px 0px 8px 8px;
     padding-top:0;
-    font-size: 1em;
+    font-size: 0.95em;
     /*text-align: center;*/
     /*align-content: center;*/
   }
@@ -483,7 +481,8 @@ table.quickref {
     font-size: 1.1em;}
 
     .techtop-grid-item{
-        font-size: 1em;
+
+        font-size: 0.9em;
         text-align: left;
         padding-right: 6px;
     }
@@ -497,7 +496,8 @@ table.quickref {
     }
 
     .box h2{
-        margin-bottom: 0.10em;
+        /*margin-bottom: 0.10em;*/
+        margin-bottom: 0.4em;
     }
 
     .box h3{
@@ -505,7 +505,7 @@ table.quickref {
         line-height:0.7em;
     }
 
-    .linksize{
+       .linksize{
         font-size: 1.2em;
         font-weight:bold;
         color:green;
@@ -701,7 +701,6 @@ table.quickref {
     padding: 7px;
   }
   
-
   .grid-container-quickref>div:nth-child(1){
     /*border-top: 1px solid black;*/
     border: 1px solid black;

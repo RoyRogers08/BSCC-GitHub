@@ -85,9 +85,10 @@ table.homepage {
     overflow: hidden;
     margin: 0 auto;
     margin-bottom: 0px;
-    /*width: 70%;*/
-    min-width: 40%;
-    max-width: 63%;
+    max-width: 80%;
+    min-width: 70%;
+        
+    
     padding-bottom: 10px;
     font-size: 0.95em;
     box-shadow: 10px 10px 15px grey; 
@@ -492,6 +493,7 @@ table.quickref {
         font-size: 0.9em;
         text-align: left;
         padding-right: 6px;
+        
     }
 
     .techtop-grid-item:nth-child(1){
@@ -529,8 +531,8 @@ table.quickref {
         /*grid-template-columns: 1fr 1fr minmax(50px, max-content) 1fr;*/
         grid-template-columns: 1fr 1fr;
         /*grid-template-rows: 1fr 1fr;*/
-        background-color: #f3e921;
         border: 1px solid black;
+        background-color: #f3e921;
         
       }
 
@@ -541,12 +543,21 @@ table.quickref {
     font-size: 1em;
     /*text-align: center;*/
     align-content: left;
+    background-color: #f3e921;
+    
 
       }
 
       .grid-maint img{
         float: left;
         margin-right: 20px;
+      }
+
+      .ul_link{
+        min-width: 75%;
+        max-width: 88%;
+        font-size:1.25rem;
+        padding-right: 10px;
       }
 
       .ul_link a{
@@ -560,10 +571,16 @@ table.quickref {
     }
 
     .img_left{
-        width:100px;
+        /*width:150px;*/
         float:left;
         margin: 10px;
     }
+
+    .img_right{
+      /*width:200px;*/
+      float:right;
+      margin: 10px;
+  }
 
     .scam_img_right{
 
@@ -576,6 +593,15 @@ table.quickref {
       width:45%;
       float:left;
       margin: 10px;
+  }
+
+  .scampics{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: .5rem;
+    /*width:50%;*/
+
   }
 
 /* For Recommended Specifications Grid */
